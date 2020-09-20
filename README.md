@@ -15,6 +15,7 @@ Prerequisites for setting up the overlay:
 
 1. [Download the project](https://github.com/dylmye/lastfm-overlay/archive/master.zip) and host it on a web server or put it somewhere on your computer.
 2. Rename `index.example.html` to `index.html`. There are 4 settings in this file that you will need to be aware of to make this overlay work for you:
+
 | Variable Name | Possible Values | Meaning                                                 |
 | ------------- | --------------- | ------------------------------------------------------- |
 | api           | Text            | (Optional, required for last.fm) Your last.fm API key   |
