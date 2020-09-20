@@ -28,7 +28,7 @@ Prerequisites for setting up the overlay:
 ## Notes
 
 * ListenBrainz can be slow to update, or not update at all. Last.fm is highly recommended.
-* Apps that don't share listening status between devices like Tidal may show music from the wrong account. Spotify works best with this.
+* Apps that don't share listening status between devices like Tidal may show music from the wrong device. Spotify works best with this.
 
 ## Roadmap
 
