@@ -1,7 +1,6 @@
 ISC License
 
-Copyright 2021- Dylan Myers
-Contains elements copyright (c) Mitch Canter
+Copyright 2021- Dylan Myers. Contains elements copyright (c) Mitch Canter.
 
 Permission to use, copy, modify, and/or distribute this software for any
 purpose with or without fee is hereby granted, provided that the above
