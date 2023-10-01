@@ -28,7 +28,8 @@
                 const track = {
                     title: trackSrc.name,
                     artist: trackSrc.artist["#text"],
-                    album: trackSrc.album["#text"]
+                    album: trackSrc.album["#text"],
+					cover: trackSrc.image[3]["#text"],
                 };
 
                 // compare old vs new
@@ -52,6 +53,7 @@
             $("#track").html(details.title);
             $("#artist").html(details.artist);
             $("#album").html(details.album);
+			$("#cover").attr('src', details.cover);
         }
 
         setInterval(function() {
@@ -59,43 +61,60 @@
         }, time * 1000)
     </script> 
 
-    <style>
-        html, body {
-            font-size: 16px;
-            color: white;
-            margin: 0;
-            padding: 0;
-        }
-        
-        h2,h4 {
-            font-family: "Segoe UI", sans-serif;
-            padding: 0;
-            margin: 0;
-            text-transform: capitalize;
-        }
+<style>
+    html, body {
+        font-size: 16px;
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
 
-        #widget{
-            background: black;
-            width: 195px;
-            position: relative;
-            left: 0px; 
-            transition: .2s all ease;
-            overflow: hidden;
-            padding: .5rem;
-        }
+    h2, h4 {
+        font-family: "Segoe UI", sans-serif;
+        padding: 0.5rem; 
+        margin: 0;
+        text-transform: capitalize;
+    }
 
-        h2{font-size: .9rem; height: 40px;}
-        h4{font-size: .75rem}
+    #widget {
+        background: rgba(0, 0, 0, 0.7); 
+        width: 25%; 
+        position: relative;
+        left: 0px;
+        transition: .2s all ease;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: auto; 
+    }
 
-    </style>
+    .container {
+        flex: 1;
+    }
+
+    h2 {
+        font-size: 2rem; 
+    }
+
+    h4 {
+        font-size: 1.5rem; 
+    }
+
+    img {
+        height: 200px;
+        width: 200px;
+    }
+</style>
 </head>
-
-<body>  
+<body>
     <main id="widget">
-        <h2 id="track">Loading...</h2>
-        <h4 id="artist">Loading...</h4>
-        <h4 id="album">Loading...</h4>
+        <div class="container">
+            <h2 id="track">Loading..</h2>
+            <h4 id="artist">Loading...</h4>
+            <h4 id="album">Loading...</h4>
+        </div>
+        <img id="cover" src=""/>
     </main>
-
 </body>
 </html>
